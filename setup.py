@@ -27,7 +27,7 @@ plugin_author = "Manoj Reddy D"
 plugin_author_email = "manojdevios@gmail.com"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/manojdevios/OctoPrint-MacrosPlugin"
+plugin_url = "https://github.com/manojdevios/OctoPrint-Macros"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "AGPLv3"

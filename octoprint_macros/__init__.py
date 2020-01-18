@@ -43,6 +43,22 @@ class MacrosPlugin(octoprint.plugin.StartupPlugin,
             js=["js/macros.js"],
             css=["css/macros.css"]
         )
+    def get_update_information(self):
+        return dict(
+            macros=dict(
+                displayName="Macros",
+                displayVersion=self._plugin_version,
+
+                # version check: github repository
+                type="github_release",
+                user="manojdevios",
+                repo="OctoPrint-Macros",
+                current=self._plugin_version,
+
+                # update method: pip w/ dependency links
+                pip="https://github.com/manojdevios/OctoPrint-Macros/archive/{target_version}.zip"
+            )
+        )
 
 
 # If you want your plugin to be registered within OctoPrint under a different name than what you defined in setup.py
@@ -51,4 +67,13 @@ class MacrosPlugin(octoprint.plugin.StartupPlugin,
 __plugin_name__ = "Macros"
 __plugin_version__ = "0.1.0"
 __plugin_description__ = "This ia an awesome plugin to create user definable macro buttons"
-__plugin_implementation__ = MacrosPlugin()
+#__plugin_implementation__ = MacrosPlugin()
+
+def __plugin_load__():
+    global __plugin_implementation__
+    __plugin_implementation__ = MacrosPlugin()
+
+    global __plugin_hooks__
+    __plugin_hooks__ = {
+        "octoprint.plugin.softwareupdate.check_config": __plugin_implementation__.get_update_information
+    }

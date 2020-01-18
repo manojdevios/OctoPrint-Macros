@@ -11,11 +11,11 @@ or manually using this URL:
 
 
 ## Configuration
-Go to settings and edit the gcode commands for your need and also you can edit the macro button name. 
+Go to settings UI and edit the gcode commands for your need and also you can edit the macro button name. 
 
 ![Configuration Dialog](https://i.imgur.com/6Qln8KR.png)
 
-## Ussage
+## Usage
 The buttons are added to the control tab below the regular controls
 
 ![Example Button Controls](https://i.imgur.com/UiHiFbr.png)
