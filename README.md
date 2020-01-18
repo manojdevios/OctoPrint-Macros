@@ -13,7 +13,7 @@ or manually using this URL:
 ## Configuration
 Go to settings UI and edit the gcode commands for your need and also you can edit the macro button name. 
 
-![Configuration Dialog](https://i.imgur.com/6Qln8KR.png)
+![Configuration Dialog](https://i.imgur.com/2kxHlgh.png)
 
 ## Usage
 The buttons are added to the control tab below the regular controls
