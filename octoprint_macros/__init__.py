@@ -50,5 +50,5 @@ class MacrosPlugin(octoprint.plugin.StartupPlugin,
 # can be overwritten via __plugin_xyz__ control properties. See the documentation for that.
 __plugin_name__ = "Macros"
 __plugin_version__ = "0.1.0"
-__plugin_description__ = "This ia an awesome plugin to create user definable macro buttons""
+__plugin_description__ = "This ia an awesome plugin to create user definable macro buttons"
 __plugin_implementation__ = MacrosPlugin()
